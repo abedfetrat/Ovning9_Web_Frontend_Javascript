@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BishBoshV2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bish-Bosh 2.0</h1>
+    </header>
+    <main>
+      <p>
+        Skriver ut talen 1 till angivet MAX tal. Bish, Bosh eller Bish-Bosh
+        beroende på om talet i talföljden är jämnt delbart med de angivna BISH
+        och BOSH talen. Programmet skapad i syfte att träna på Frontend.
+      </p>
+      <form id="bishbosh-form" action="">
+        <div class="inputs">
+          <div class="input-wrapper">
+            <label for="bish">BISH</label>
+            <input
+              id="bish-input"
+              type="number"
+              min="1"
+              name="bish"
+              value="3"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="bosh">BOSH</label>
+            <input
+              id="bosh-input"
+              type="number"
+              min="1"
+              name="bosh"
+              value="4"
+            />
+          </div>
+          <div class="input-wrapper">
+            <label for="max">MAX</label>
+            <input
+              id="max-input"
+              type="number"
+              min="1"
+              name="max"
+              value="100"
+            />
+          </div>
+        </div>
+        <button type="submit">Print</button>
+      </form>
+      <div>
+        <p>OUTPUT:</p>
+        <p id="output"></p>
+      </div>
+    </main>
+    <script src="bishbosh.js"></script>
+  </body>
+</html>

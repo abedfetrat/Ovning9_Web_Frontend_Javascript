@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BishBosh</title>
+  </head>
+  <body>
+    <script>
+      let output = "";
+
+      for (let i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 4 == 0) {
+          output += "Bish-Bosh, ";
+        } else if (i % 3 == 0) {
+          output += "Bish, ";
+        } else if (i % 4 == 0) {
+          output += "Bosh, ";
+        } else {
+          output += `${i}, `;
+        }
+      }
+
+      console.log(output);
+    </script>
+  </body>
+</html>
